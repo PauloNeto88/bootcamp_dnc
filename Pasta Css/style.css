@@ -1,154 +1,299 @@
-:root{
-   --azul-dnc: #0C70F2;
-   --preto-dnc: #303030;
-   --cinxa-hover: #C9C9C9;
+  :root{
+    --azul-dnc: #0C70F2;
+    --preto-dnc: #303030;
+    --cinxa-hover: #C9C9C9;
 
-   --fonte-padrao: 'Inter';
-}
-
-body{
-    margin: 0px;
-    padding: 0px;
-
-    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
-    background-repeat: no-repeat;
-}
-
-#principal{
-    width: 100%;
-    height: 100px;
-    background-color: var(--preto-dnc);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center ;
-    border-bottom: 1px solid #BABABA;
-}
-
-#menu{
-    display: flex;
-    width: 55%;
-    justify-content: space-around;
-
-    align-items: center;
-}
-
-#principal div a{
-    font-size: 25px;
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-    font-family: var(--fonte-padrao);
-}
-
-   #principal div a:hover{
-      color:var(--cinxa-hover);
-   }
- #principal button{
-    margin-right: 5%;
-    background-color: var(--azul-dnc);
-    color: white;
-    width: 80px;
-    height: 39px;
-    font-family: var(--fonte-padrao);
-    font-size: 20px;
-    font-weight: 600;
-
-    box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
-    cursor: pointer;
- }
-
- section{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin-top: 100px;
-   margin-bottom: 100px;
- }
-
- section h1{
-   font-family: var(--fonte-padrao);
-   font-size: 80px;
-   font-weight: 800;
-   text-align: center;
-   color: white;
- }
-
- section h2{
-   font-family: var(--fonte-padrao);
-   font-size: 40px;
-   font-weight: 700;
-   text-align: center;
-   color: white;
-   margin-bottom: 100px;
- }
-
- span{
-   background-color: black;
-   font-weight: bold;
-   padding: 5px;
- }
-
- form{
-  color: white;
-  font-family: var(--fonte-padrao);
-  font-size: 30px;
-  font-weight: 600;
-  width: 700px;
- }
-
- .form-group{
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 10px;
- }
-
- form input{
-  border-radius: 10px;
-  height: 35px;
-  border: 0px;
-  font-size: 20px;
-  padding: 10px;
- }
-
- form label{
-  margin: 10px 0px 10px 0px;
- }
-
-  form input:: ::placeholder{
-    color: rgba(57, 57, 57, 0.50);
-    font-family: var(--fonte-padrao);
-    font-size: 10px;
-    font-weight: 400px;
+    --fonte-padrao: 'Inter';
   }
 
- .checkbox-item label{
-  font-size:25px;
+  body{
+      margin: 0px;
+      padding: 0px;
 
- }
+      background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+      background-repeat: no-repeat;
+  }
 
- .checkbox-item{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
- }
+  /*menu*/
 
- input[type="checkbox"]{
-  transform: scale(1.7);
- }
+  #principal{
+      width: 100%;
+      height: 100px;
+      background-color: var(--preto-dnc);
 
- input[type="submit"]{
-  width: 100%;
-  height: 56px;
-  margin: 50px 0 50px 0;
-  color: white;
-  font-family: var(--fonte-padrao);
-  font-size: 32px;
-  font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center ;
+      border-bottom: 1px solid #BABABA;
+  }
 
-  background-color: rgba(12, 112, 242, 0.90);
-  box-shadow:  0px 6px 4px 0px rgba(12, 112, 242, 0.25);
-  cursor: pointer;
- }
+  #menu{
+      display: flex;
+      width: 55%;
+      justify-content: space-around;
+
+      align-items: center;
+  }
+
+  #principal div a{
+      font-size: 25px;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+      font-family: var(--fonte-padrao);
+  }
+
+    #principal div a:hover{
+        color:var(--cinxa-hover);
+    }
+  #principal button{
+      margin-right: 5%;
+      background-color: var(--azul-dnc);
+      color: white;
+      width: 80px;
+      height: 39px;
+      font-family: var(--fonte-padrao);
+      font-size: 20px;
+      font-weight: 600;
+
+      box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+      cursor: pointer;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  section h1{
+    font-family: var(--fonte-padrao);
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+  }
+
+  section h2{
+    font-family: var(--fonte-padrao);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin-bottom: 100px;
+  }
+
+  span{
+    background-color: black;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  form{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 30px;
+    font-weight: 600;
+    width: 700px;
+  }
+
+  .form-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  form input{
+    border-radius: 10px;
+    height: 35px;
+    border: 0px;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  form label{
+    margin: 10px 0px 10px 0px;
+  }
+
+    form input:: ::placeholder{
+      color: rgba(57, 57, 57, 0.50);
+      font-family: var(--fonte-padrao);
+      font-size: 10px;
+      font-weight: 400px;
+    }
+
+  .checkbox-item label{
+    font-size:25px;
+
+  }
+
+  .checkbox-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  input[type="checkbox"]{
+    transform: scale(1.7);
+  }
+
+  input[type="submit"]{
+    width: 100%;
+    height: 56px;
+    margin: 100px 0 100px 0;
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 32px;
+    font-weight: 600;
+
+    background-color: rgba(12, 112, 242, 0.90);
+    box-shadow:  0px 6px 4px 0px rgba(12, 112, 242, 0.25);
+    cursor: pointer;
+  }
+
+  /*footer*/
+
+  footer{
+    background-color: var(--azul-dnc);
+    width: 100%;
+    color: white;
+  }
+
+  footer .linha1{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-size: 25px;
+    font-weight: 600;
+    align-items: center;
+  }
+
+  
+  footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 520px;
+  }
+
+  footer h5{
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    border-radius: 10px;
+    font-size: 38px;
+    font-weight: 800 ;
+    padding: 18px;
+    background-color: var(--preto-dnc);
+  }
+
+  footer ul li{
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  footer ul li a{
+    color: white;
+    text-decoration: none;
+  }
+
+  footer .endereco{
+    font-weight: 600;
+    font-size: 32px;
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-align: center;
+    width: 27%;
+  }
+
+  footer .linha2{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    
+  }
+
+  footer .linha2 a{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px;
+  }
+
+  footer .linha2 a:first-child{
+    border-right: 3px solid white;
+  }
+  footer .linha2:hover{
+    color: var(--cinxa-hover);
+  }
+
+@media only screen and (max-width: 600px){
+
+  body{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /*menu*/
+
+  #principal{
+    flex-direction: column;
+    height: auto;
+  }
+
+  #menu{
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+  }
+
+  #menu a{
+    display: flex;
+    height: 50px;
+    align-items: center;
+  }
+
+  #principal button{
+    width: 100%;
+    margin: 0px;
+  }
+
+  /*section*/
+
+  section h1{
+    font-size: 38px;
+  }
+
+  section h2{
+    font-size: 25px;
+    padding: 0 15px 0 15px;
+  }
+
+  form{
+    width: 95%;
+    font-size: 20px;
+  }
+
+  .checkbox-item label{
+    font-size: 13px;
+  }
+}
+
